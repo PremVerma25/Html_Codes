@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(photo-1478104718532-efe04cc3ff7f.avif);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    /* background-repeat: n; */
+}
+
+.manu-bar{
+    background-color: #32cf27;
+    padding: 10px;
+    text-align: center;
+    
+    
+}
+.manu-bar ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+.manu-bar ul li{
+    width: 120px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.manu-bar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.active, .manu-bar ul li:hover{
+    background-color: green;
+    border-radius: 5px;
+}    
+
+.sub-maun-1{
+    display: none;
+}
+
+.manu-bar ul li:hover .sub-maun-1{
+    display: block;
+    position: absolute;
+    background-color: #32cf27;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+
+.manu-bar ul li:hover .sub-maun-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.manu-bar ul li:hover .sub-maun-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    border-radius: 0;
+    background: transparent;
+    text-align: left;
+}
+
+.manu-bar ul li:hover .sub-maun-1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+.manu-bar ul li:hover .sub-maun-1 ul li a:hover{
+    color: #258703;
+}

@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .appointment-btn {
+    background: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .appointment-btn:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #007bff;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-buttons .btn-primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.hero-buttons .btn-secondary {
+    background: #f9f9f9;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.hero-buttons a:hover {
+    background: #0056b3;
+    color: #fff;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.services .service-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.services .service-card h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.services .service-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.services .service-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}

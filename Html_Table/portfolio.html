@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prem Verma Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("img.png");
+            position: relative;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #4abda6, #116374);
+            color: #333;
+            cursor: pointer;
+        }
+        h1, h2, h3, h4, h5 {
+            text-align: center;
+            color: #090745;
+        }
+        .text {
+            margin: 20px 0;
+            text-transform: uppercase;
+        }
+        pre {
+            font-size: 16px;
+            margin: 10px 30px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-left: 4px solid #4a47a3;
+            border-radius: 5px;
+            overflow: scroll;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 90%;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #4a47a3;
+            color: #fff;
+        }
+        li {
+            margin: 10px 30px;
+            list-style: circle;
+            font-size: 18px;
+            color: rgb(152, 77, 117);
+            
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #4a47a3;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .signature {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 50px;
+            font-size: 16px;
+        }
+        .signature strong {
+            color: #4a47a3;
+        }
+        h5 {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 10px 30px;
+        }
+        details {
+            margin: 20px 30px;
+        }
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        details summary:hover {
+            color: #4a47a3;
+        }
+        /* Animation and transitions */
+        h1 {
+            animation: fadeIn 2s;
+        }
+        h2 {
+            animation: slideIn 1.5s;
+        }
+        li {
+            transition: transform 0.3s ease-in-out;
+        }
+        li:hover {
+            transform: translateX(10px);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text">Prem Verma</h1>
+<pre>Experienced software developer with a focus on delivering efficient and scalable solutions. Passionate about continuous learning and innovation.</pre>
+    <hr>
+
+    <h2 class="text">Career</h2>
+    <details>
+        <summary>Read More</summary>
+        <pre>Proven ability to work collaboratively in teams and deliver projects on time. Adept at problem-solving and implementing effective solutions for complex challenges.</pre>
+   
+    </details>
+    <hr>
+
+    <h2 class="text">Technologies and Skills</h2>
+    <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>JavaScript</li>
+    </ul>
+    <hr>
+
+    <h2 class="text">Academic Qualification</h2>
+    <table>
+        <tr>
+            <th>S.No</th>
+            <th>Qualification</th>
+            <th>Name of Institute</th>
+            <th>University</th>
+            <th>Year</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>B.Com</td>
+            <td>Schooling</td>
+            <td>M.P Board</td>
+            <td>2002</td>
+            <td>86.9%</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>M.Com</td>
+            <td>London</td>
+            <td>M.P Board</td>
+            <td>2023</td>
+            <td>89.9%</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>M.Tech</td>
+            <td>UK</td>
+            <td>UK University</td>
+            <td>2006</td>
+            <td>76.9%</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h2 class="text">Projects</h2>
+    <h3>E-Commerce Website</h3>
+    <h5>Technologies Used: Python | Django | HTML | CSS</h5>
+    <ul>
+        <li>Developed a user-friendly interface for seamless shopping experiences.</li>
+        <li>Integrated secure payment gateways to ensure transactional safety.</li>
+        <li>Implemented efficient search and filter functionalities for better product discovery.</li>
+        <li>Enhanced performance by optimizing database queries and backend processes.</li>
+    </ul>
+    <hr>
+
+    <h3>Student Management System</h3>
+    <h5>Technologies Used: C++ | HTML | CSS</h5>
+    <ul>
+       <li>Created a centralized system to manage student records efficiently.</li>
+        <li>Implemented robust authentication for data security.</li>
+        <li>Designed an intuitive dashboard for administrators to view key metrics.</li>
+        <li>Streamlined data entry processes to reduce redundancy and errors.</li>
+    </ul>
+    <hr>
+
+    <h2 class="text">Skills</h2>
+    <h5>Java | Python | Django | HTML | CSS</h5>
+    <hr>
+
+    <h2>Certifications</h2>
+    <h4>Full Stack Development Course Mar 2023 - Present</h4>
+    <hr>
+
+    <h2>Personal Details</h2>
+    <pre>
+Name          - Prem Verma
+Date of Birth - January/2002/25
+Father Name   - Verandra Verma
+Mother Name   - Anju Verma
+Address       - Bhopal
+Language      - Hindi | English
+    </pre>
+    <hr>
+ <h2>Follow me</h2>
+     <h5><a class="text" href="https://www.facebook.com/premverma.official/" target="facebook">Facebook</a>
+        </h5>
+        <hr>
+    <h2>Declaration</h2>
+      <h5>I hereby declare that the information provided above is true to the best of my knowledge and belief.</h5>
+    <hr>
+
+    <div class="signature">
+        <strong>Signature: <input type="text"></strong>
+        
+        <strong>Date: <input type="date"></strong>
+    </div>
+
+    <hr>
+    
+    </body>
+</html>

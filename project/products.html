@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    background-color: #fafafa;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #131921;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul.nav-links li {
+    font-size: 22px;
+}
+
+nav ul.nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul.nav-links li a:hover {
+    color: #ff9900;
+    transform: scale(1.05);
+}
+
+/* Product Page Styles */
+.product-page {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f4f4f4;
+    gap: 20px;
+}
+
+.product-images {
+    flex: 1;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    border: 2px solid #ff9900;
+}
+
+/* Product Information */
+.product-info {
+    flex: 2;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.rating {
+    font-size: 22px;
+    color: #ff9900;
+}
+
+.product-price {
+    font-size: 28px;
+    color: #b12704;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.product-description h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Product Actions */
+.product-actions {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.product-actions button {
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #f0c14b;
+    color: black;
+}
+
+.add-to-cart:hover {
+    background-color: #ddb347;
+    transform: scale(1.05);
+}
+
+.buy-now {
+    background-color: #ff9900;
+    color: white;
+}
+
+.buy-now:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #131921;
+    color: white;
+    font-size: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-page {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-info {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .main-image {
+        width: 90%;
+    }
+
+    .thumbnail-images {
+        justify-content: center;
+    }
+
+    .thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .product-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Amazon Clone</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Page -->
+    <main class="product-page">
+        <div class="product-images">
+            <img src="main-product.jpg" alt="Main Product Image" class="main-image">
+
+            <div class="thumbnail-images">
+                <img src="product1.jpg" alt="Thumbnail 1" class="thumbnail">
+                <img src="product2.jpg" alt="Thumbnail 2" class="thumbnail">
+                <img src="product3.jpg" alt="Thumbnail 3" class="thumbnail">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h2>Product Name</h2>
+            <div class="rating">
+                <span>⭐⭐⭐⭐☆</span> <!-- Example Rating -->
+                <span>(120 reviews)</span>
+            </div>
+
+            <p class="product-price">$100.00</p>
+
+            <div class="product-description">
+                <h3>Product Details</h3>
+                <p>This is a detailed description of the product. It includes all the key features and specifications that potential buyers might be interested in. It can describe things like material, size, color, and special features.</p>
+            </div>
+
+            <div class="product-actions">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Amazon Clone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

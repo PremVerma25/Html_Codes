@@ -1,0 +1,170 @@
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px; /* Larger font for body */
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #131921;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 36px; /* Larger font for logo */
+}
+
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul.nav-links li {
+    font-size: 22px; /* Larger font for navigation links */
+}
+
+nav ul.nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul.nav-links li a:hover {
+    color: #ff9900;
+}
+
+/* Search Bar */
+.search-bar input {
+    padding: 15px;
+    font-size: 18px; /* Larger input font */
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 15px 20px;
+    font-size: 18px; /* Larger button font */
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #e68900;
+}
+
+/* Main Section */
+main {
+    padding: 40px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* Larger banner image */
+    object-fit: cover;
+}
+
+.categories {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.categories h2 {
+    font-size: 36px; /* Larger category heading */
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category-item {
+    font-size: 24px; /* Larger font for categories */
+    padding: 20px 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.category-item:hover {
+    transform: scale(1.1); /* Hover effect to make category items larger */
+    background-color: #ff9900;
+    color: white;
+}
+
+/* Featured Products */
+.featured-products {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 36px; /* Larger heading for featured products */
+    margin-bottom: 30px;
+}
+
+.product-list {
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.product-item {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Hover effect for products */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Larger image size for products */
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    font-size: 24px; /* Larger product title */
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 22px; /* Larger price font */
+    color: #b12704;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #131921;
+    color: white;
+    font-size: 20px; /* Larger footer text */
+}
